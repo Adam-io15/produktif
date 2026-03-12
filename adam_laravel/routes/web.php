@@ -26,7 +26,7 @@ Route::redirect('/home','/user');
 
 Route::view('/about','welcome');
 
-// ===== ACARA 4: NAMED ROUTE & GROUP ROUTING =====
+// ========================================================================
 
 Route::get(uri: '/user/{id}/profile', action: function ($id): string {
     return "Profile User ID: " . $id;
