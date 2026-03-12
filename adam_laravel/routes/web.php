@@ -6,6 +6,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+//========================================================================
+
 Route::get('/user', function () {
     return "Halaman User";
 });
@@ -44,7 +46,7 @@ Route::get(uri: '/cek-url', action: function (): string {
 
 Route::middleware(['web'])->group(function () {
     Route::get(uri: '/dashboard', action: function (): string {
-        return "Halaman Dashboard (pakai middleware)";
+        return "Halaman Dashboard";
     });
 });
 
